@@ -22,14 +22,14 @@ python3 convert_dir_to_note_sequences.py   --input_dir=$INPUT_DIRECTORY   --outp
 
 
 ## Discussion
-This project was interesting in multiple ways. First, the problem of no-reference image quality is unique and challenging. One part we would like to point out is the disparity of measurements the metrics provide. An opportunity for future research would be to compile more results from additional metrics such as DIIVINE. Another interesting note is that we, as humans, could pick out the "best" deblurred image across every method., this leads to some thought about the human eye and how well it can detect altered images. Another opportunity for future research might be a double-blind test to compare image quality metrics against human vision.  One difficulty we faced individually was discovering what metrics would be helpful for measurement since traditional metrics like PSNR and SSIM were not applicable.
+
 
 
 
 ## Python Dependencies
 
-python3
-magenta
+- python3
+- magenta
 
 
 ## Citations
