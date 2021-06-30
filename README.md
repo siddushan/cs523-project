@@ -4,8 +4,8 @@ By: Junyu Liu, Sidd Shanmugam, Minglan Zheng
 ## Introduction
 This project reproduces results stemming from [this](https://arxiv.org/pdf/1803.05428.pdf) paper written about hierarchical latent vector models for long-term structure in music. The slides used to present this project can be found [here](https://docs.google.com/presentation/d/1HwGiTZR6fXrnVB28yXMmkUXwNGe1hjuAIGSnJO_UkGI/edit?usp=sharing)
 
-## Data conversion 
-After ensuring you have the correct python dependencies.
+## Data perperation 
+In order to convert your midi files into the necessary tfrecord, follow these steps
 
 ```
 pip install magenta （only needs to do this once)
