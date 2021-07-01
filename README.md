@@ -23,7 +23,7 @@ python3 convert_dir_to_note_sequences.py   --input_dir=$INPUT_DIRECTORY   --outp
 
 ## Discussion
 
-
+This project was interesting to work on in many ways. Working on audio data to begin with presents a challenge. Unlike image or language data, music and audio are defined by many things in a wave form like amplitude and frequency. This requires special data preparation before we could even pass it into a model for training. Audio and instruments also have different timbres meaning different instruments that are playing at the same pitch still sound different. While this is easy for a human to realize, it is much harder to define to a model. Accounting for all these differences made this project very unique. It was also a special opportunity to work on the more creative side of deep learning by listening to music and attempting to generate something natural. While the results we saw here are very simple applied to single instruments at a time, future work could focus on looking at lyrical data combined with a NLP model or looking at full compositions containing multiple instruments at once.
 
 
 ## Python Dependencies
