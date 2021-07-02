@@ -26,6 +26,9 @@ python3 convert_dir_to_note_sequences.py \
 --recursive
 ```
 
+## Architecture
+
+
 ## Evaluation 
 The results of the MusicVAE model are evaluated using reconstruction quality and cross entropy loss. For 2-bar models, the authors used scheduled sampling and for the 16-bar models they used the teacher forcing method.
 
