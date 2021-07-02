@@ -9,9 +9,13 @@ In order to convert your midi files into the necessary tfrecord, follow these st
 
 ```
 pip install magenta （only needs to do this once)
+
 ml ffmpeg (you can add ffmpeg to modules to load)
+
 INPUT_DIRECTORY=<the midi dir>
+
 SEQUENCES_TFRECORD=<the output file>
+
 python3 convert_dir_to_note_sequences.py \
 --input_dir=$INPUT_DIRECTORY  \
 --output_file=$SEQUENCES_TFRECORD \
