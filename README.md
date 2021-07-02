@@ -27,7 +27,11 @@ python3 convert_dir_to_note_sequences.py \
 ```
 
 ## Evaluation 
-The results of the MusicVAE model are evaluated using reconstruction quality and cross entropy loss. 
+The results of the MusicVAE model are evaluated using reconstruction quality and cross entropy loss. For 2-bar models, the authors used scheduled sampling and for the 16-bar models they used the teacher forcing method.
+
+Scheduled sampling is used to help prevent exposure bias which commonly occurs in sequence generation problems like this. The basic idea is to give the model prediction values as input instead of the ground truth in order to prevent dependency on the prior being learned.
+Teacher forcing is the process of giving our model the ground truth when it makes a misclassification so that predictions in later time steps may be more accurate. This is analagous to a multi-step homework problem where part b depends on the correctness of part a. [3](https://arxiv.org/pdf/1906.04331.pdf)
+
 
 ## Results
 
@@ -46,6 +50,7 @@ This project was interesting to work on in many ways. Working on audio data to b
 ## Citations
 - [[1]](https://arxiv.org/pdf/1803.05428.pdf) Adam Roberts, Jesse Engel, Colin Raffel, Curtis Hawthorne, Douglas Eck (2019). A Hierarchical Latent Vector Model for Learning Long-Term Structure in Music
 - [[2]](https://github.com/magenta/magenta/tree/master/magenta/models/music_vae) Magenta's MusicVAE base code
+- [[3]](https://arxiv.org/pdf/1906.04331.pdf) Parallel Scheduled Sampling 
 
 
 
