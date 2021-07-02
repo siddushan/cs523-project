@@ -27,6 +27,8 @@ python3 convert_dir_to_note_sequences.py \
 ```
 
 ## Instructions 
+The following commands can be used on SCC with appropriate paths to your data and using the correct config settings located in the original project [here](https://github.com/magenta/magenta/blob/main/magenta/models/music_vae/configs.py)
+
 ### Training flat piano:
 ```
 python3 music_vae_train.py \
