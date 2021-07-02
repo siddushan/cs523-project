@@ -29,6 +29,8 @@ python3 convert_dir_to_note_sequences.py \
 ## Architecture
 ![alt text](https://github.com/siddushan/cs523-project/blob/main/architecture.png)
 
+This architecture diagram is taken directly from the [paper](https://arxiv.org/pdf/1803.05428.pdf) referenced above. It uses a recurrent VAE which contains a sequential autoencoder and a hierarchical recurrent decoder. This architecture was compared with a baseline 'flat' decoder to show this hierarchical method leads to improved results especially on longer sequences. 
+
 
 ## Evaluation 
 The results of the MusicVAE model are evaluated using reconstruction quality and cross entropy loss. For 2-bar models, the authors used scheduled sampling and for the 16-bar models they used the teacher forcing method.
