@@ -50,7 +50,7 @@ This project was interesting to work on in many ways. Working on audio data to b
 ## Citations
 - [[1]](https://arxiv.org/pdf/1803.05428.pdf) Adam Roberts, Jesse Engel, Colin Raffel, Curtis Hawthorne, Douglas Eck (2019). A Hierarchical Latent Vector Model for Learning Long-Term Structure in Music
 - [[2]](https://github.com/magenta/magenta/tree/master/magenta/models/music_vae) Magenta's MusicVAE base code
-- [[3]](https://arxiv.org/pdf/1906.04331.pdf) Parallel Scheduled Sampling 
+- [[3]](https://arxiv.org/pdf/1906.04331.pdf) Daniel Duckworth, Arvind Neelakantan, Ben Goodrich, Lukasz Kaiser, Samy Bengio (2019). Parallel Scheduled Sampling 
 
 
 
