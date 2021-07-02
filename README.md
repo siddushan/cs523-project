@@ -12,9 +12,9 @@ Models that process audio data require the data to be in a certain format. MIDI 
 In order to convert your MIDI files into the necessary TFRecord, follow these steps
 
 ```
-pip install magenta （only needs to do this once)
+pip install magenta
 
-ml ffmpeg (you can add ffmpeg to modules to load)
+ml ffmpeg
 
 INPUT_DIRECTORY=<the midi dir>
 
