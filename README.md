@@ -27,6 +27,7 @@ python3 convert_dir_to_note_sequences.py \
 ```
 
 ## Architecture
+![alt text](https://github.com/siddushan/cs523-project/blob/main/architecture.png)
 
 
 ## Evaluation 
