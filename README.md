@@ -30,7 +30,7 @@ python3 convert_dir_to_note_sequences.py \
 The results of the MusicVAE model are evaluated using reconstruction quality and cross entropy loss. For 2-bar models, the authors used scheduled sampling and for the 16-bar models they used the teacher forcing method.
 
 Scheduled sampling is used to help prevent exposure bias which commonly occurs in sequence generation problems like this. The basic idea is to give the model prediction values as input instead of the ground truth in order to prevent dependency on the prior being learned.
-Teacher forcing is the process of giving our model the ground truth when it makes a misclassification so that predictions in later time steps may be more accurate. This is analagous to a multi-step homework problem where part b depends on the correctness of part a. [3](https://arxiv.org/pdf/1906.04331.pdf)
+Teacher forcing is the process of giving our model the ground truth when it makes a misclassification so that predictions in later time steps may be more accurate. This is analagous to a multi-step homework problem where part b depends on the correctness of part a. 
 
 
 ## Results
