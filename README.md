@@ -16,7 +16,7 @@ python3 convert_dir_to_note_sequences.py   --input_dir=$INPUT_DIRECTORY   --outp
 ```
 
 ## Evaluation 
-
+The results of the MusicVAE model are evaluated using reconstruction quality and cross entropy loss. 
 
 ## Results
 
