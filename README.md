@@ -26,6 +26,24 @@ python3 convert_dir_to_note_sequences.py \
 --recursive
 ```
 
+## Instructions 
+# Training flat piano:
+```
+python3 music_vae_train.py --config='flat-mel_16bar' --run_dir='/projectnb/cs523/jyliu/training/piano' --mode=train --examples_path='/projectnb/cs523/jyliu/data/converted/piano' --hparams=batch_size=32,learning_rate=0.0005
+```
+# Training hierdec-piano: (trained from scratch)
+```
+python3 music_vae_train.py --config='hierdec-mel_16bar' --run_dir='/projectnb/cs523/jyliu/training/hierdecP' --mode=train --examples_path='/projectnb/cs523/jyliu/data/converted/piano' --hparams=batch_size=64,learning_rate=0.0005
+```
+# Evaluate hierdec-piano:
+```
+python3 music_vae_train.py --config='hierdec-mel_16bar' --run_dir='/projectnb/cs523/jyliu/training/finetune-piano' --mode=eval --examples_path='/projectnb/cs523/jyliu/data/converted/piano' --hparams=batch_size=64
+```
+# Finetuning hierdec-piano:
+```
+python3 music_vae_train.py --config='hierdec-mel_16bar' --run_dir='/projectnb/cs523/jyliu/training/finetune-piano' --mode=train --examples_path='/projectnb/cs523/jyliu/data/converted/piano' --hparams=batch_size=64,learning_rate=0.0005 --checkoint_file=/projectnb/cs523/jyliu/training/finetune-piano/hierdec-mel_16bar.ckpt.data-00000-of-00001
+```
+
 ## Architecture
 ![alt text](https://github.com/siddushan/cs523-project/blob/main/architecture.png)
 
