@@ -81,13 +81,11 @@ python3 music_vae_train.py \
 --mode=train \
 --examples_path='/projectnb/cs523/jyliu/data/converted/piano' \
 --hparams=batch_size=64,learning_rate=0.0005 \
---checkoint_file=/projectnb/cs523/jyliu/training/finetune-piano/hierdec-mel_16bar.ckpt
+--checkoint_file=/projectnb/cs523/jyliu/training/finetune-piano/hierdec-mel_16bar.ckpt.data-00000-of-00001
 ```
 
-Note: As of July 1, 2021, the music_vae_train.py script seems to be iterating over only 10 batches of data in each training session. As a result, we had to manually restart training about every 15 minutes so the model gets trained on a different 10 batches of data.
-
 ## Architecture
-![alt text](https://github.com/siddushan/cs523-project/blob/main/architecture.png)
+<img src=https://github.com/siddushan/cs523-project/blob/main/architecture.png width="500" />
 
 This architecture diagram is taken directly from the [paper](https://arxiv.org/pdf/1803.05428.pdf) referenced above. It uses a recurrent VAE which contains a sequential autoencoder and a hierarchical recurrent decoder. This architecture was compared with a baseline 'flat' decoder to show this hierarchical method leads to improved results especially on longer sequences. 
 
@@ -100,12 +98,21 @@ Teacher forcing is the process of giving our model the ground truth when it make
 
 
 ## Results
-### Qualitative Analysis
-![alt text](https://github.com/siddushan/cs523-project/blob/main/reconstruction_ex01.png)
-![alt text](https://github.com/siddushan/cs523-project/blob/main/reconstruction_ex02.png)
-One way to demonstrate that that the model is utilizing the latent code is to analyze the reconstruction accuracy, such that model is learning the features from the latent space. We visualize midi files of original sampling and their reconstruction, as shown above. 
+### Qualitative 
+#### --> Analysis I 
+- One way to demonstrate that that the model is utilizing the latent code is to analyze the **reconstruction accuracy**, such that model is learning the features from the latent space. 
+- We visualize two sets of midi files below, both has the **original sequence on the top and its reconstruction on the bottom**.
+- The interesting thing is that the model maintains the overall structure and key of the piece, but changing some local characteristics.
+<p float="left">
+<img src=https://github.com/siddushan/cs523-project/blob/main/reconstruction_ex01.png width="350" />
+<img src=https://github.com/siddushan/cs523-project/blob/main/reconstruction_ex02.png width="350" />
+</p>
 
-![alt text](https://github.com/siddushan/cs523-project/blob/main/Interpolation.png)
+#### --> Analysis II
+- Another way to verify that the model is utilizing the latent code is through latent space manipulations i.e. interpolations. In the “posterior collapse” case, the decoder will generates useful samples but they will be completely independent of the latent code, and interpolations output will not change as intended. 
+- As shown on the botton image, the interpolated point **(third image)** manages to successfully mix attributes of both sequences in a middle register and still remain musical.
+
+<img src=https://github.com/siddushan/cs523-project/blob/main/Interpolation.png width="400" />
 
 
 ### Samples
