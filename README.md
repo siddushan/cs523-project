@@ -81,8 +81,10 @@ python3 music_vae_train.py \
 --mode=train \
 --examples_path='/projectnb/cs523/jyliu/data/converted/piano' \
 --hparams=batch_size=64,learning_rate=0.0005 \
---checkoint_file=/projectnb/cs523/jyliu/training/finetune-piano/hierdec-mel_16bar.ckpt.data-00000-of-00001
+--checkoint_file=/projectnb/cs523/jyliu/training/finetune-piano/hierdec-mel_16bar.ckpt
 ```
+
+Note: As of July 1, 2021, the music_vae_train.py script seems to be iterating over only 10 batches of data in each training session. As a result, we had to manually restart training about every 15 minutes so the model gets trained on a different 10 batches of data.
 
 ## Architecture
 ![alt text](https://github.com/siddushan/cs523-project/blob/main/architecture.png)
