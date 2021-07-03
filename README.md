@@ -14,8 +14,8 @@ The slides used to present our reproduction of this work can be found [here](htt
   - [Evaluate hierdec-piano](#evaluate-hierdec-piano)
   - [Finetuning hierdec-piano](#finetuning-hierdec-piano)
 * [Architecture](#architecture)
-* [Evaluation](#evaluation )
-* [Results](#results)
+* [Evaluation](#evaluation)
+* [Anlysis and Demo](#results)
   - [Qualitative Analysis](#qualitative-analysis)
   - [Samples](#samples)
 * [Final thoughts](#final-thoughts)
@@ -99,7 +99,7 @@ Scheduled sampling is used to help prevent exposure bias which commonly occurs i
 Teacher forcing is the process of giving our model the ground truth when it makes a misclassification so that predictions in later time steps may be more accurate. This is analagous to a multi-step homework problem where part b depends on the correctness of part a. 
 
 
-## Results
+## Anlysis and Demo
 ### Qualitative Analysis
 #### --> Analysis I 
 - One way to demonstrate that that the model is utilizing the latent code is to analyze the **reconstruction accuracy**, such that model is learning the features from the latent space. 
@@ -118,7 +118,7 @@ Teacher forcing is the process of giving our model the ground truth when it make
 
 
 ### Samples
-
+We generated demo samples using our trained model, please referred to the audio_outputs folder
 ## Final thoughts
 
 This project was interesting to work on in many ways. Working on audio data to begin with presents a challenge. Unlike image or language data, music and audio are defined by many things in a wave form like amplitude and frequency. This requires special data preparation before we could even pass it into a model for training. Audio and instruments also have different timbres meaning different instruments that are playing at the same pitch still sound different. While this is easy for a human to realize, it is much harder to define to a model. Accounting for all these differences made this project very unique. It was also a special opportunity to work on the more creative side of deep learning by listening to music and attempting to generate something natural. While the results we saw here are very simple applied to single instruments at a time, future work could focus on looking at lyrical data combined with a NLP model or looking at full compositions containing multiple instruments at once.
