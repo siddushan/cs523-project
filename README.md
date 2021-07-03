@@ -1,6 +1,23 @@
 # Music Generation Using Magenta
 By: Junyu Liu, Sidd Shanmugam, Minglan Zheng
 
+## Documentation
+
+* [Introduction](##introduction)
+* [Data preparation](##data-preparation)
+* [Instructions](##instructions)
+  - [Training flat piano](###training-flat-piano)
+  - [Training hierdec-piano](###training-hierdec-piano)
+  - [Evaluate hierdec-piano](###evaluate-hierdec-piano)
+  - [Finetuning hierdec-piano](###finetuning-hierdec-piano)
+* [Architecture](##architecture)
+* [Evaluation](##evaluation )
+* [Results](##results)
+  - [Qualitative Analysis](###qualitative-analysis)
+  - [Samples](###samples)
+* [Final thoughts](##final-thoughts)
+* [Citations](##citations)
+
 ## Introduction
 This project reproduces results stemming from [this](https://arxiv.org/pdf/1803.05428.pdf) paper written about hierarchical latent vector models for long-term structure in music. The paper resulted in the [Magenta Project](https://magenta.tensorflow.org/)'s VAE models which contains several models including [MusicVAE](https://github.com/magenta/magenta/tree/main/magenta/models/music_vae#musicvae-a-hierarchical-recurrent-variational-autoencoder-for-music) and [GrooVAE](https://github.com/magenta/magenta/tree/main/magenta/models/music_vae#groovae). 
 
@@ -81,9 +98,10 @@ Teacher forcing is the process of giving our model the ground truth when it make
 
 
 ## Results
+### Qualitative Analysis
+### Samples
 
-
-## Discussion
+## Final thoughts
 
 This project was interesting to work on in many ways. Working on audio data to begin with presents a challenge. Unlike image or language data, music and audio are defined by many things in a wave form like amplitude and frequency. This requires special data preparation before we could even pass it into a model for training. Audio and instruments also have different timbres meaning different instruments that are playing at the same pitch still sound different. While this is easy for a human to realize, it is much harder to define to a model. Accounting for all these differences made this project very unique. It was also a special opportunity to work on the more creative side of deep learning by listening to music and attempting to generate something natural. While the results we saw here are very simple applied to single instruments at a time, future work could focus on looking at lyrical data combined with a NLP model or looking at full compositions containing multiple instruments at once.
 
