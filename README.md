@@ -44,6 +44,9 @@ python3 convert_dir_to_note_sequences.py \
 ## Instructions 
 The following commands can be used on SCC with appropriate paths to your data and using the correct config settings located in the original project [here](https://github.com/magenta/magenta/blob/main/magenta/models/music_vae/configs.py)
 
+### Training Results: 
+Our checkpoint of training the heirarchical model from scratch is available [here](https://drive.google.com/drive/folders/1d6HYCq-27hnXMBwP27cFHxDAZHYAzsPp?usp=sharing). 
+
 ### Training flat piano:
 ```
 python3 music_vae_train.py \
@@ -81,9 +84,6 @@ python3 music_vae_train.py \
 --hparams=batch_size=64,learning_rate=0.0005 \
 --checkoint_file=/save/checkpoint/here
 ```
-
-### Training Results: 
-You can download a version of our result of training the heirarchical model from scratch from [here](https://drive.google.com/drive/folders/1d6HYCq-27hnXMBwP27cFHxDAZHYAzsPp?usp=sharing). 
 
 ## Architecture
 <img src=https://github.com/siddushan/cs523-project/blob/main/architecture.png width="500" />
