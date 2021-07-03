@@ -85,7 +85,7 @@ python3 music_vae_train.py \
 ## Architecture
 <img src=https://github.com/siddushan/cs523-project/blob/main/architecture.png width="500" />
 
-This architecture diagram is taken directly from the [paper](https://arxiv.org/pdf/1803.05428.pdf) referenced above. It uses a recurrent VAE which contains a sequential autoencoder and a hierarchical recurrent decoder. This architecture was compared with a baseline 'flat' decoder to show this hierarchical method leads to improved results especially on longer sequences. 
+*This architecture diagram is taken directly from the [paper](https://arxiv.org/pdf/1803.05428.pdf) referenced above.* It uses a recurrent VAE which contains a sequential autoencoder and a hierarchical recurrent decoder. This architecture was compared with a baseline 'flat' decoder to show this hierarchical method leads to improved results especially on longer sequences. 
 
 
 ## Evaluation 
