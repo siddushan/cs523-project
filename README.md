@@ -10,7 +10,7 @@ The slides used to present our reproduction of this work can be found [here](htt
 * [Data preparation](#data-preparation)
 * [Instructions](#instructions)
   - [Training flat piano](#training-flat-piano)
-  - [Training hierdec-piano](#training-hierdec-piano)
+  - [Training hierdec-piano](#training-hierdec-piano-trained-from-scratch)
   - [Evaluate hierdec-piano](#evaluate-hierdec-piano)
   - [Finetuning hierdec-piano](#finetuning-hierdec-piano)
 * [Architecture](#architecture)
@@ -81,6 +81,9 @@ python3 music_vae_train.py \
 --hparams=batch_size=64,learning_rate=0.0005 \
 --checkoint_file=/save/checkpoint/here
 ```
+
+### Training Results: 
+You can download a version of our result of training the heirarchical model from scratch from [here](https://drive.google.com/drive/folders/1d6HYCq-27hnXMBwP27cFHxDAZHYAzsPp?usp=sharing). 
 
 ## Architecture
 <img src=https://github.com/siddushan/cs523-project/blob/main/architecture.png width="500" />
