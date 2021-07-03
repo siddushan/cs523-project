@@ -98,7 +98,7 @@ Teacher forcing is the process of giving our model the ground truth when it make
 
 
 ## Results
-### Qualitative 
+### Qualitative Analysis
 #### --> Analysis I 
 - One way to demonstrate that that the model is utilizing the latent code is to analyze the **reconstruction accuracy**, such that model is learning the features from the latent space. 
 - We visualize two sets of midi files below, both has the **original sequence on the top and its reconstruction on the bottom**.
