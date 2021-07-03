@@ -3,7 +3,7 @@ By: Junyu Liu, Sidd Shanmugam, Minglan Zheng
 
 ## Documentation
 
-* [Introduction](##introduction)
+* [Introduction](##Introduction)
 * [Data preparation](##data-preparation)
 * [Instructions](##instructions)
   - [Training flat piano](###training-flat-piano)
