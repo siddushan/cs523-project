@@ -99,6 +99,13 @@ Teacher forcing is the process of giving our model the ground truth when it make
 
 ## Results
 ### Qualitative Analysis
+![alt text](https://github.com/siddushan/cs523-project/blob/main/reconstruction_ex01.png)
+![alt text](https://github.com/siddushan/cs523-project/blob/main/reconstruction_ex02.png)
+One way to demonstrate that that the model is utilizing the latent code is to analyze the reconstruction accuracy, such that model is learning the features from the latent space. We visualize midi files of original sampling and their reconstruction, as shown above. 
+
+![alt text](https://github.com/siddushan/cs523-project/blob/main/Interpolation.png)
+
+
 ### Samples
 
 ## Final thoughts
