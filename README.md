@@ -49,7 +49,7 @@ The following commands can be used on SCC with appropriate paths to your data an
 
 - Our checkpoint of training a flat baseline model from scratch can be accessed here: [data](https://drive.google.com/file/d/1-yBass-8H7ISmAxqQxCXg8QqXCvoxi_I/view?usp=sharing), [index](https://drive.google.com/file/d/1CXNwWu-fK_4CbeJYEwbG7cecNIkztXfs/view?usp=sharing), [meta](https://drive.google.com/file/d/1fEW73QCNy-3ZQvAOUQIRf71HNnj1VcNa/view?usp=sharing).
 
-- You can utilize MusicVAE_train_res.ipynb and these checkpoints to experiment with generating demos. 
+- You can utilize MusicVAE_train_res.ipynb and these checkpoints to experiment with generating demos. Some of our demos and analysis can be found in the [Analysis and Demo](#analysis-and-demo) section.  
 
 As of July 1, 2021, the music_vae_train.py script seems to be iterating over only 10 batches of data in each training session. As a result, we had to manually restart training about every 15 minutes so the model gets trained on a different 10 batches of data.
 
