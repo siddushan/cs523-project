@@ -8,7 +8,7 @@ The slides used to present our reproduction of this work can be found [here](htt
 
 ## Documentation
 * [Data preparation](#data-preparation)
-* [Instructions](#instructions)
+* [Instructions and Results](#instructions-and-results)
   - [Training flat piano](#training-flat-piano)
   - [Training hierdec-piano](#training-hierdec-piano-trained-from-scratch)
   - [Evaluate hierdec-piano](#evaluate-hierdec-piano)
@@ -41,11 +41,12 @@ python3 convert_dir_to_note_sequences.py \
 --recursive
 ```
 
-## Instructions 
+## Instructions and Results
 The following commands can be used on SCC with appropriate paths to your data and using the correct config settings located in the original project [here](https://github.com/magenta/magenta/blob/main/magenta/models/music_vae/configs.py)
 
 ### Training Results: 
 Our checkpoint of training the heirarchical model from scratch is available [here](https://drive.google.com/drive/folders/1d6HYCq-27hnXMBwP27cFHxDAZHYAzsPp?usp=sharing). 
+As of July 1, 2021, the music_vae_train.py script seems to be iterating over only 10 batches of data in each training session. As a result, we had to manually restart training about every 15 minutes so the model gets trained on a different 10 batches of data.
 
 ### Training flat piano:
 ```
