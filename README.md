@@ -3,20 +3,20 @@ By: Junyu Liu, Sidd Shanmugam, Minglan Zheng
 
 ## Documentation
 
-* [Introduction](##Introduction)
-* [Data preparation](##data-preparation)
-* [Instructions](##instructions)
-  - [Training flat piano](###training-flat-piano)
-  - [Training hierdec-piano](###training-hierdec-piano)
-  - [Evaluate hierdec-piano](###evaluate-hierdec-piano)
-  - [Finetuning hierdec-piano](###finetuning-hierdec-piano)
-* [Architecture](##architecture)
-* [Evaluation](##evaluation )
-* [Results](##results)
-  - [Qualitative Analysis](###qualitative-analysis)
-  - [Samples](###samples)
-* [Final thoughts](##final-thoughts)
-* [Citations](##citations)
+* [Introduction](#introduction)
+* [Data preparation](#data-preparation)
+* [Instructions](#instructions)
+  - [Training flat piano](#training-flat-piano)
+  - [Training hierdec-piano](#training-hierdec-piano)
+  - [Evaluate hierdec-piano](#evaluate-hierdec-piano)
+  - [Finetuning hierdec-piano](#finetuning-hierdec-piano)
+* [Architecture](#architecture)
+* [Evaluation](#evaluation )
+* [Results](#results)
+  - [Qualitative Analysis](#qualitative-analysis)
+  - [Samples](#samples)
+* [Final thoughts](#final-thoughts)
+* [Citations](#citations)
 
 ## Introduction
 This project reproduces results stemming from [this](https://arxiv.org/pdf/1803.05428.pdf) paper written about hierarchical latent vector models for long-term structure in music. The paper resulted in the [Magenta Project](https://magenta.tensorflow.org/)'s VAE models which contains several models including [MusicVAE](https://github.com/magenta/magenta/tree/main/magenta/models/music_vae#musicvae-a-hierarchical-recurrent-variational-autoencoder-for-music) and [GrooVAE](https://github.com/magenta/magenta/tree/main/magenta/models/music_vae#groovae). 
