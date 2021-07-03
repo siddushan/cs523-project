@@ -15,7 +15,7 @@ The slides used to present our reproduction of this work can be found [here](htt
   - [Finetuning hierdec-piano](#finetuning-hierdec-piano)
 * [Architecture](#architecture)
 * [Evaluation](#evaluation)
-* [Anlysis and Demo](#results)
+* [Anlysis and Demo](#analysis-and-demo)
   - [Qualitative Analysis](#qualitative-analysis)
   - [Samples](#samples)
 * [Final thoughts](#final-thoughts)
@@ -46,6 +46,9 @@ The following commands can be used on SCC with appropriate paths to your data an
 
 ### Training Results: 
 Our checkpoint of training the heirarchical model from scratch is available [here](https://drive.google.com/drive/folders/1d6HYCq-27hnXMBwP27cFHxDAZHYAzsPp?usp=sharing). 
+
+Our checkpoint of training a flat baseline model from scratch is available [here](https://drive.google.com/file/d/1-yBass-8H7ISmAxqQxCXg8QqXCvoxi_I/view?usp=sharing, https://drive.google.com/file/d/1CXNwWu-fK_4CbeJYEwbG7cecNIkztXfs/view?usp=sharing, https://drive.google.com/file/d/1fEW73QCNy-3ZQvAOUQIRf71HNnj1VcNa/view?usp=sharing)
+
 As of July 1, 2021, the music_vae_train.py script seems to be iterating over only 10 batches of data in each training session. As a result, we had to manually restart training about every 15 minutes so the model gets trained on a different 10 batches of data.
 
 ### Training flat piano:
@@ -99,7 +102,7 @@ Scheduled sampling is used to help prevent exposure bias which commonly occurs i
 Teacher forcing is the process of giving our model the ground truth when it makes a misclassification so that predictions in later time steps may be more accurate. This is analagous to a multi-step homework problem where part b depends on the correctness of part a. 
 
 
-## Anlysis and Demo
+## Analysis and Demo
 ### Qualitative Analysis
 #### --> Analysis I 
 - One way to demonstrate that that the model is utilizing the latent code is to analyze the **reconstruction accuracy**, such that model is learning the features from the latent space. 
